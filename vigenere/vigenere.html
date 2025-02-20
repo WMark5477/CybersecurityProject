@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Vigenere</title>
+      <link rel="stylesheet" href="../styles.css" />
+   </head>
+   <body>
+      <nav>
+         <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="../casear/caesar.html">Szyfr Cezara</a></li>
+            <li><a href="../playfair/playfair.html">Szyfr Playfair'a</a></li>
+            <li><a href="./vigenere.html">Szyfr Vigenere'a</a></li>
+         </ul>
+      </nav>
+      <main>
+         <h1>Szyfr Vigenere'a</h1>
+         <div class="row">
+            <label for="vgInput">Wprowadź wiadomość:</label>
+            <input type="text" id="vgInput" autocomplete="off" />
+         </div>
+         <div class="row">
+            <label for="vgKey">Wprowadź klucz:</label>
+            <input type="text" id="vgKey" maxlength="35" autocomplete="off" />
+         </div>
+         <div class="row">
+            <button id="vgButtonEncrypt" onclick="encrypt()">Szyfruj</button>
+            <button id="vgButtonDecrypt" onclick="decrypt()">Odszyfruj</button>
+         </div>
+         <div class="row">
+            <p class="result" id="vgResult"></p>
+         </div>
+      </main>
+   </body>
+   <script src="./vigenere.js"></script>
+</html>

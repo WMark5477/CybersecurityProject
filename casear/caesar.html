@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caesar</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Strona główna</a></li>
+        <li><a href="./caesar.html">Szyfr Cezara</a></li>
+        <li><a href="../playfair/playfair.html">Szyfr Playfair'a</a></li>
+        <li><a href="../vigenere/vigenere.html">Szyfr Vigenere'a</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Szyfr Cezara</h1>
+      <div class="row">
+        <label for="caesarInput">Wprowadź wiadomość:</label>
+        <input type="text" id="caesarInput" autocomplete="off" />
+      </div>
+      <div class="row">
+        <p class="caesarKeyLabel">Wprowadź klucz:</p>
+        <input type="number" id="caesarKey" autocomplete="off" />
+      </div>
+      <div class="row">
+        <button id="caesarButtonEncrypt" onclick="encrypt()">Szyfruj</button>
+        <button id="caesarButtonDecrypt" onclick="decrypt()">Odszyfruj</button>
+      </div>
+      <div class="row">
+        <p class="result" id="caesarResult"></p>
+      </div>
+    </main>
+  </body>
+  <script src="./caesar.js"></script>
+</html>

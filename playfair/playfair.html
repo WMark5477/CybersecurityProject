@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Playfair</title>
+      <link rel="stylesheet" href="../styles.css" />
+   </head>
+   <body>
+      <nav>
+         <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="../casear/caesar.html">Szyfr Cezara</a></li>
+            <li><a href="./playfair.html">Szyfr Playfair'a</a></li>
+            <li><a href="../vigenere/vigenere.html">Szyfr Vigenere'a</a></li>
+         </ul>
+      </nav>
+      <main>
+         <h1>Szyfr Playfair'a</h1>
+         <div class="row">
+            <label for="pfInput">Wprowadź wiadomość:</label>
+            <input type="text" id="pfInput" autocomplete="off" />
+         </div>
+         <div class="row">
+            <label for="pfKey">Wprowadź klucz:</label>
+            <input type="text" id="pfKey" maxlength="35" autocomplete="off" />
+            <button id="pfRandomize" onclick="randomizeKey()">Losuj</button>
+         </div>
+         <div class="row">
+            <button id="pfButtonEncrypt" onclick="encrypt()">Szyfruj</button>
+            <button id="pfButtonDecrypt" onclick="decrypt()">Odszyfruj</button>
+         </div>
+         <div class="row table-row">
+            <p>Twoja macierz:</p>
+            <table id="pfDisplay"></table>
+         </div>
+         <div class="row">
+            <p class="result" id="pfResult"></p>
+         </div>
+      </main>
+   </body>
+   <script src="./playfair.js"></script>
+</html>
